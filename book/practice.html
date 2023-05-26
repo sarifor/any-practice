@@ -12,10 +12,10 @@
  
         <script>
             document.querySelector('#pushState').addEventListener('click', function () {
-                history.pushState({ data : 'pushpush' }, 'Change title to pushState', '/pushpush');
+                history.pushState({ data : 'pushpush' }, 'Change title to pushState', '#/pushpush');
             });
             document.querySelector('#replaceState').addEventListener('click', function () {
-                history.replaceState({ data: 'replace' }, 'Change title to replaceState', '/replace');
+                history.replaceState({ data: 'replace' }, 'Change title to replaceState', '#/replace');
             })
             window.addEventListener('popstate', function () {
                 console.log('popstate', history.state);
